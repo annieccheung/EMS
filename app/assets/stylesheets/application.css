@@ -1,0 +1,42 @@
+/* 
+*= require_self
+*= require_tree .
+*/
+
+html, 
+body {
+  font-family: font-family: 'Gafata', sans-serif;
+  font-size: 15px;
+}
+
+h1{
+  font-family: font-family: 'Gafata', sans-serif;
+}
+
+.nav-container {
+text-align: center;
+display: inline-block;
+margin: 0 auto 0 auto;
+width: 518px;
+position: relative;
+left: 50%;
+margin-left: -259px;
+font-size: 14px;
+border-bottom: 1px solid hsla(0, 0%, 73%, 1);
+padding-bottom: 15px;
+}
+
+.navbar-brand {
+  color: hsla(348, 92%, 43%, 1);
+  font-size: 25px;
+}
+
+
+.footer {
+	height: 330px;
+	position: relative;
+	clear: both;
+}
+
+
+
