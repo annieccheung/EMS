@@ -1,7 +1,12 @@
-/ main role="main" class="container" id="main"
-/   div class="row"
-/     div class="col-md-4"
-/       form id="login-form" method="post" action="#" accept-charset="UTF-8"
+main role="main" class="container main" id="main"
+  div class="row"
+    div class="col-md-4"
+      form id="login-form" method="post" action="#" accept-charset="UTF-8"
+		  ol
+		    - @users.each do |some_user|
+		      li
+		        | Email address: 
+		        = some_user.email
 /         fieldset
 /           legend class="legend" Please sign in
 /             div class="form-group"
@@ -12,8 +17,3 @@
             /   input type="text" id="user-password" name="user[password]" placeholder="password"
             / div class="form-group"
             /   input type="submit" value="Sign in" class="btn btn-success btn-lg"
-/   ol
-/     - @users.each do |some_user|
-/       li
-/         | Email address: 
-/         = some_user.email

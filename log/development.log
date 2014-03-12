@@ -14834,3 +14834,179 @@ Are you trying to nest a child tag in a tag containing text? Use | for the text 
 
 
 Started POST "/__better_errors/70266430306500/variables" for 127.0.0.1 at 2014-03-12 14:53:30 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:55:39 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4140ms
+  Rendered site/index.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 6.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:55:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:39 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:55:58 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6830ms
+  Rendered site/index.html.slim within layouts/application (3.7ms)
+Completed 200 OK in 11ms (Views: 7.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:55:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:58 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:55:59 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5350ms
+  Rendered site/index.html.slim within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:55:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:55:59 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:56:27 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4490ms
+  Rendered site/index.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:56:27 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:27 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:27 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4990ms
+  Rendered site/index.html.slim within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 8.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6920ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:56:43 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:57:49 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3980ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:57:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:49 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:57:50 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4220ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:50 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:50 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:57:50 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:50 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-12 14:57:59 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5040ms
+  Rendered site/index.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-12 14:57:59 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:59 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:59 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-12 14:57:59 +0800
