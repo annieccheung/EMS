@@ -1,14 +1,19 @@
 / main role="main" class="container" id="main"
 /   div class="row"
-/ 		div class="col-md-4"
+/     div class="col-md-4"
 /       form id="login-form" method="post" action="#" accept-charset="UTF-8"
 /         fieldset
-/ 				  legend class="legend" Please sign in
-/ 						div class="form-group"
-/ 						  label for="user-email" Email address
-/               input type="text" id="user-email" name='user[email]' placeholder="email address"
-/ 						div class="form-group"
-/ 						  label for="user-password" Password
-/ 							input type="text" id="user-password" name="user[password]" placeholder="password"
+/           legend class="legend" Please sign in
 /             div class="form-group"
-/ 							input type="submit" value="Sign in" class="btn btn-success btn-lg"
+            /   label for="user-email" Email address
+            /   input type="text" id="user-email" name='user[email]' placeholder="email address"
+            / div class="form-group"
+            /   label for="user-password" Password
+            /   input type="text" id="user-password" name="user[password]" placeholder="password"
+            / div class="form-group"
+            /   input type="submit" value="Sign in" class="btn btn-success btn-lg"
+/   ol
+/     - @users.each do |some_user|
+/       li
+/         | Email address: 
+/         = some_user.email
