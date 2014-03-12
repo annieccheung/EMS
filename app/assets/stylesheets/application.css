@@ -21,7 +21,7 @@ position: relative;
 font-size: 14px;
 border-bottom: 1px solid hsla(0, 0%, 73%, 1);
 padding-bottom: 15px;
-line-height:60px; 
+line-height:35px; 
 background-color: hsla(0, 100%, 50%, 0);
 z-index: 100;
 }
@@ -33,6 +33,21 @@ z-index: 100;
 /*  margin-left: 15em;*/
   margin-bottom: auto;
   position: relative;
+}
+
+.nav-links {
+  position: relative;
+  text-align: center;
+  margin-left: 100px;
+
+}
+
+.header-link{
+  float: left;
+  margin: 0 25px 0 25px;
+  text-align: center;
+  position: relative;
+  margin-bottom: auto;
 }
 
 
