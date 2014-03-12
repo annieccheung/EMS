@@ -5,30 +5,31 @@
 
 html, 
 body {
-  font-family: font-family: 'Gafata', sans-serif;
-  font-size: 15px;
 }
 
 h1{
-  font-family: font-family: 'Gafata', sans-serif;
 }
 
 .nav-container {
 text-align: center;
 display: inline-block;
-margin: 0 auto 0 auto;
+margin: 1.5em 17em auto ;
 width: 518px;
 position: relative;
-left: 50%;
-margin-left: -259px;
 font-size: 14px;
 border-bottom: 1px solid hsla(0, 0%, 73%, 1);
 padding-bottom: 15px;
+line-height:60px; 
+
 }
 
-.navbar-brand {
+.top-header-brand {
   color: hsla(348, 92%, 43%, 1);
   font-size: 25px;
+  text-align: center;
+/*  margin-left: 15em;*/
+  margin-bottom: auto;
+  position: relative;
 }
 
 
@@ -36,6 +37,14 @@ padding-bottom: 15px;
 	height: 330px;
 	position: relative;
 	clear: both;
+    height: 3em;
+    margin-top: 45em;
+	text-align: right;
+}
+
+.main
+{
+margin: 1.5em 17em auto ;
 }
 
 
