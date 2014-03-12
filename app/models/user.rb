@@ -14,7 +14,6 @@ class User
   field :burrito, type: String
 
   def encrypt_password
-  	puts "THIS IS HAPPENING BEFORE SAVE... woah....#{self.password}"
   	if password.present?
   		self.tapatio = BCrypt::Engine.generate_salt
   		self.burrito = BCrypt::Engine.hash_secret(password, tapatio)
