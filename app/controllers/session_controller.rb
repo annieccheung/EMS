@@ -1,11 +1,18 @@
 class SessionController < ApplicationController
 
 def new
-  render text: "Display the log in form"
 end
 
 def create
-  render text: User.authenticate(params[:user][:email], params[:user][:password]).email
+  @user = User.authenticate(params[:user][:email], params[:user][:password])
+
+  if @user
+  	session[:user_id] = @user.id
+  	render text: "Youz logged in"
+  else 
+  	render text: "DENIED. STAY OUT."
+  end 
+  
 end
 
 def destroy
