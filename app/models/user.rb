@@ -13,7 +13,18 @@ class User
   field :tapatio, type: String
   field :burrito, type: String
 
-  def encrypt_password
+  def authenticate(password)
+  	self.burrito == BCrypt::Engine.hash_secret(password, self.tapatio)
+  end
+
+  def self.authenticate(email,password)
+  	user = User.find_by email: email
+  	user if user and user.authenticate(password)
+  end
+
+  protected
+
+  def encrypt_password	
   	if password.present?
   		self.tapatio = BCrypt::Engine.generate_salt
   		self.burrito = BCrypt::Engine.hash_secret(password, tapatio)

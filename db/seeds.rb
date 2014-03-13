@@ -9,8 +9,8 @@
 User.destroy_all
 
 User.create([
-	{ :email => 'annieccheung@gmail.com' },
-  { :email => 'annacalla15@gmail.com' },
-  { :email => 'bridgetngrant@gmail.com' }
+	{ email: 'annieccheung@gmail.com', password: 'annie',  },
+  { email: 'annacalla15@gmail.com', password: '', password_confirmation: '' },
+  { email: 'bridgetngrant@gmail.com' password: '', password_confirmation: '' }
 
 	])
