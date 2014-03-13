@@ -2,7 +2,6 @@ doctype html
 html
   head
     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
-    
     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
@@ -11,22 +10,22 @@ html
 
   body
 
-    header class="navbar navbar-fixed-top" role="navigation"
-      div class="container nav-container"
-        h1 class="top-header-brand" Santa Clara University EMS
-        div class="nav-links"
-          div class="header-link 0" try me
-          div class="header-link 1" and me
-          div class="header-link 2" and definitely me
+    header.navbar.navbar-fixed-top role="navigation"
+      .container.nav-container
+        h1.top-header-brand Santa Clara University EMS
+        .nav-links
+          .header-link.0 try me
+          .header-link.1 and me
+          .header-link.2 and definitely me
 
     == yield
-    
-    footer id="footer" class="footer"
-      div class="container"
-        div class="row"
-          p class="text-muted credit"
+
+    footer#footer.footer
+      .container
+        .row
+          p.text-muted.credit
             = link_to "Privacy Policy", privacy_url
             |  &bull;
             = link_to " Terms of Use", terms_url
-            |  &bull; 
-            | © 2014 annie cheung
+            |  &bull;
+            |  © 2014 annie cheung
