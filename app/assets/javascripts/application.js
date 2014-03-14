@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 
-//= require_tree .
+//= require ./vendor/noty/packaged/jquery.noty.packaged.min
+//= require ./vendor/noty/themes/default

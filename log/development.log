@@ -22336,3 +22336,621 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-14 14:57:20
 
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-14 14:57:20 +0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:18:12 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim___3051572260538002490_70221734353040'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:18:51 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim___3051572260538002490_70221734353040'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:45 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (55.1ms)
+Completed 500 Internal Server Error in 99ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:45 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:46 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:46 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:46 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:47 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:47 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:47 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:47 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:48 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:48 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:48 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:48 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:49 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:49 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:49 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:49 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:49 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:50 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:50 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:50 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:50 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:51 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:51 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:19:51 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (couldn't find file './vendor/noty/themes'
+  (in /Users/temp/Desktop/WDI/EMS/app/assets/javascripts/application.js:17)):
+    4:     link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media= "all" rel= "stylesheet"
+    5:     link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'
+    6:     = stylesheet_link_tag "application", media: "all"
+    7:     = javascript_include_tag "application"
+    8:     = csrf_meta_tags
+    9:     title Santa Clara University EMS
+   10: 
+  app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__1663511708923500659_70301999722960'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
+Processing by SessionController#new as HTML
+  Rendered session/new.html.slim within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 59.9ms)
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-14 15:20:25 +0800
