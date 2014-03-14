@@ -6,6 +6,8 @@ main#main.container role="main"
 
           legend.legend Please sign in
 
+          .form-group = flash.map {|key, value| "#{key.capitalize}: #{value}"}.join(";")
+
           .form-group
             = f.label :email, class: "sr-only"
             = f.text_field :email, class: "form-control", placeholder: "email address"

@@ -1,6 +1,7 @@
 class SessionController < ApplicationController
 
 def new
+	# @messages = flash.map {|key, value| "#{key.capitalize}: #{value}"}.join(";")
 end
 
 def create
@@ -11,13 +12,15 @@ def create
   	# render text: "Youz logged in"
   	redirect_to root_url
   else 
-  	render text: "DENIED. STAY OUT."
+  	flash.now[:alert] = "Unable to log you in. Please check your email and password and try again."
+  	render :new
   end 
   
 end
 
 def destroy
-  render text: "Log the user out."  
+  session[:user_id] = nil	
+  redirect_to login_url, notice: "You've successfully logged out!"
 end
 
 end
