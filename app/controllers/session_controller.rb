@@ -8,7 +8,8 @@ def create
 
   if @user
   	session[:user_id] = @user.id
-  	render text: "Youz logged in"
+  	# render text: "Youz logged in"
+  	redirect_to root_url
   else 
   	render text: "DENIED. STAY OUT."
   end 

@@ -21312,3 +21312,27 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 17:30:54 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 17:30:54 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-13 17:49:04 +0800
+Processing by SiteController#index as HTML
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 17:49:04 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 17:49:04 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 17:49:04 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 17:49:04 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-14 10:30:31 +0800
+Processing by SiteController#index as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 5ms (Views: 2.7ms)
