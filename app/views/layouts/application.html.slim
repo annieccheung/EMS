@@ -10,22 +10,28 @@ html
 
   body
 
-    header.navbar.navbar-fixed-top role="navigation"
-      .container.nav-container
-        h1.top-header-brand Santa Clara University EMS
-        .nav-links
-          .header-link.0 try me
-          .header-link.1 and me
-          .header-link.2 and definitely me
+    #wrap
 
-    == yield
+      header.navbar.navbar-fixed-top role="navigation"
+        .container.nav-container
+          h1.top-header-brand Santa Clara University EMS
+          .nav-links
+            .header-link.0 try me
+            .header-link.1 and me
+            .header-link.2 and definitely me
 
-    footer#footer.footer
-      .container
+      main#main.container role="main"
         .row
-          p.text-muted.credit
-            = link_to "Privacy Policy", privacy_url
-            |  &bull;
-            = link_to " Terms of Use", terms_url
-            |  &bull;
-            |  © 2014 annie cheung
+        .col-md-4
+           == yield
+           == render partial: "layouts/messages"
+
+      footer#footer.footer
+        .container
+          .row
+            p.text-muted.credit
+              = link_to "Privacy Policy", privacy_url
+              |  &bull;
+              = link_to " Terms of Use", terms_url
+              |  &bull;
+              |  © 2014 annie cheung
