@@ -10,4 +10,9 @@ EMS::Application.routes.draw do
   get 'privacy' => 'site#privacy'
   get 'terms'=> 'site#terms'
 
+  get 'reset/:code' => 'password#edit', as: :reset
+  put 'reset/:code' => 'password#update'
+  patch 'reset/:code' => 'password#update'
+
+ 
 end
