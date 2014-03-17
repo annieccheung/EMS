@@ -8,6 +8,7 @@ class User
   attr_accessor :password, :password_confirmation
 
   before_save :encrypt_password
+  validates :email, presence: true, uniqueness: {case_sensitive: false}
 
   field :email, type: String
   field :tapatio, type: String

@@ -25670,3 +25670,105 @@ Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" fo
 
 
 Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-17 10:30:38 +0800
+
+
+Started POST "/login" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"email"=>"anil@nil.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"email"=>"anil@nil.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4100ms
+  Rendered session/new.html.slim within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>nil}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4480ms
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 36ms (Views: 10.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:15 +0800
+
+
+Started POST "/login" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"email"=>"annieccheung@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"email"=>"annieccheung@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4770ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 91ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5326579654656d9a7e000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5220ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3620ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 14ms (Views: 9.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:22 +0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+Processing by SessionController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5326579654656d9a7e000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.3610ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5326579654656d9a7e000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4940ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4140ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_messages.html.slim (0.1ms)
+Completed 200 OK in 8ms (Views: 5.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-17 11:20:28 +0800
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 2.7040ms
