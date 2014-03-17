@@ -7,7 +7,7 @@ class User
 
   attr_accessor :password, :password_confirmation
 
-  before_save :encrypt_password
+  before_save :set_random_password, :encrypt_password
   validates :email, presence: true, uniqueness: {case_sensitive: false}
 
   field :email, type: String
@@ -24,6 +24,12 @@ class User
   end
 
   protected
+
+  def set_random_password
+    if self.burrito.blank? and password.blank?
+      self.tapatio = BCrypt::Engine.generate_salt
+      self.burrito = BCrypt::Engine.hash_secret(SecureRandom.base64(32), self.tapatio)
+  end
 
   def encrypt_password	
   	if password.present?
