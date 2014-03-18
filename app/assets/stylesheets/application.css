@@ -14,44 +14,51 @@ h1{
 
 .navbar.navbar-fixed-top{
   background: white;
+  text-align: center;
+  position: relative;
 }
 
+/*.nav-container {
+  text-align: center;
+  display: inline-block;  
+  position: relative;
+  z-index: 100;
+}*/
 
-.nav-container {
-text-align: center;
-display: inline-block;
-/*margin: 1.5em 17em auto ;*/
-/*width: 518px;*/
-position: relative;
-font-size: 14px;
-border-bottom: 1px solid hsla(0, 0%, 73%, 1);
-/*padding-bottom: 15px;*/
-line-height:35px; 
-z-index: 100;
+.inner-nav-container {
+  text-align: center;
+  display: inline-block;
+  margin: .01em 17em auto ;
+  width: 580px;
+  position: relative;
+  font-size: 14px;
+  border-bottom: 1px solid hsla(0, 0%, 73%, 1);
+  padding-bottom: 15px;
+  line-height:35px; 
+  z-index: 100;
 }
 
 .top-header-brand {
   color: hsla(348, 92%, 43%, 1);
-  font-size: 25px;
-  text-align: center;
-/*  margin-left: 15em;*/
+  font-size: 35px;
   margin-bottom: auto;
   position: relative;
 }
 
-/*.nav-links {
-  text-align: center;
+.nav-links {
   position: relative;
-
-}*/
+}
 
 .header-link{
   float: left;
-  margin: 0 25px 0 25px;
-  text-align: center;
-  position: relative;
-  margin-bottom: auto;
+  margin-top: 1px;
 }
+
+.logout-link {
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
 
 .form-group{
   margin-right: 5px;
@@ -68,10 +75,6 @@ z-index: 100;
 #main
 {
 margin: 10em 10em auto ;
-}
-
-.logout-link {
-  margin-top: 8px;
 }
 
 

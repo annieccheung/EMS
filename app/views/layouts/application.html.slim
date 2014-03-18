@@ -14,13 +14,14 @@ html
 
       header.navbar.navbar-fixed-top role="navigation"
         .container.nav-container
-          .pull-right
+          .pull-right.logout-link
             = link_to "Log Out", logout_url, method: :delete, class: "btn btn-danger logout-link" if current_user
-          h1.top-header-brand Santa Clara University EMS
-          .nav-links
-            .header-link.0 try me
-            .header-link.1 and me
-            .header-link.2 and definitely me
+          .container.inner-nav-container
+            h1.top-header-brand Santa Clara University EMS
+            .nav-links
+              .header-link.0.col-md-4 try me
+              .header-link.1.col-md-4 and me
+              .header-link.2.col-md-4 and definitely me
 
       main#main.container role="main"
         .row

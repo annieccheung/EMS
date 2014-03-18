@@ -4,27 +4,33 @@ PASSWORD_RESET_EXPIRES = 4
 
 class User
 
-  include Mongoid::Document 
+  include Mongoid::Document
   include Mongoid::Timestamps
 
   attr_accessor :password, :password_confirmation
 
-  before_save :set_random_password, :encrypt_password
-  validates :email, presence: true, uniqueness: {case_sensitive: false}
 
   field :email, type: String
-  field :tapatio, type: String
-  field :burrito, type: String
+  field :salt, type: String
+  field :fish, type: String
   field :code, type: String
   field :expires_at, type: Time
 
-  def authenticate(password)
-  	self.burrito == BCrypt::Engine.hash_secret(password, self.tapatio)
+  before_save :set_random_password, :encrypt_password
+  validates :email, presence: true, uniqueness: {case_sensitive: false}
+  validates :password, confirmation: true
+
+  def self.authenticate email, password
+    user = User.find_by email: email
+    user if user and user.authenticate(password)
   end
 
-  def self.authenticate(email,password)
-  	user = User.find_by email: email
-  	user if user and user.authenticate(password)
+  def authenticate password
+    self.fish == BCrypt::Engine.hash_secret(password, self.salt)
+  end
+
+  def self.find_by_code
+    User.find_by(:code => code, :expires_at.gte => Time.now.gmtime) 
   end
 
   def set_password_reset
@@ -34,24 +40,24 @@ class User
 
   def set_expiration
     self.expires_at = PASSWORD_RESET_EXPIRES.hours.from_now
-    self.save! 
+    self.save!
   end
+
 
   protected
 
-  def set_random_password
-    if self.burrito.blank? and password.blank?
-      self.tapatio = BCrypt::Engine.generate_salt
-      self.burrito = BCrypt::Engine.hash_secret(SecureRandom.base64(32), self.tapatio)
+    def set_random_password
+      if self.fish.blank? and password.blank?
+        self.salt = BCrypt::Engine.generate_salt
+        self.fish = BCrypt::Engine.hash_secret(SecureRandom.base64(32), self.salt)
+      end
     end
-  end
 
-  def encrypt_password	
-  	if password.present?
-  		self.tapatio = BCrypt::Engine.generate_salt
-  		self.burrito = BCrypt::Engine.hash_secret(password, tapatio)
-  	end
-  end
-
+    def encrypt_password
+      if password.present?
+        self.salt = BCrypt::Engine.generate_salt
+        self.fish = BCrypt::Engine.hash_secret(password, self.salt)
+      end
+    end
 
 end
