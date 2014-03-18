@@ -30,7 +30,10 @@ class User
   end
 
   def self.find_by_code
-    User.find_by(:code => code, :expires_at.gte => Time.now.gmtime) 
+    if user = User.find_by(:code => code, :expires_at.gte => Time.now.gmtime) 
+      user.set_expiration()
+    end
+    user
   end
 
   def set_password_reset
