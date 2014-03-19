@@ -15,26 +15,27 @@ h1{
 .navbar.navbar-fixed-top{
   background: white;
   text-align: center;
-  position: relative;
+  position: fixed;
+  z-index: 100; 
 }
 
-/*.nav-container {
+.nav-container {
   text-align: center;
   display: inline-block;  
   position: relative;
   z-index: 100;
-}*/
+}
 
 .inner-nav-container {
   text-align: center;
   display: inline-block;
-  margin: .01em 17em auto ;
+  margin: 0 17em auto ;
   width: 580px;
   position: relative;
   font-size: 14px;
   border-bottom: 1px solid hsla(0, 0%, 73%, 1);
   padding-bottom: 15px;
-  line-height:35px; 
+  line-height:35px;
   z-index: 100;
 }
 
@@ -55,7 +56,7 @@ h1{
 }
 
 .logout-link {
-  margin-top: 8px;
+  margin-top: 2px;
   margin-right: 15px;
 }
 
