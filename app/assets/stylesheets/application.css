@@ -26,15 +26,14 @@ h1{
   z-index: 100;
 }
 
+.header-logo {
+  margin-left: 5em;
+}
+
 .inner-nav-container {
-  text-align: center;
-  display: inline-block;
-  margin: 0 17em auto ;
-  width: 580px;
-  position: relative;
   font-size: 14px;
   border-bottom: 1px solid hsla(0, 0%, 73%, 1);
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   line-height:35px;
   z-index: 100;
 }
@@ -44,19 +43,20 @@ h1{
   font-size: 35px;
   margin-bottom: auto;
   position: relative;
+  margin-right: 0em;
+  width: 600px;
+  text-align: left;
 }
 
-.nav-links {
-  position: relative;
-}
 
 .header-link{
   float: left;
   margin-top: 1px;
+  text-align: center;
 }
 
 .logout-link {
-  margin-top: 2px;
+  float: left;
   margin-right: 15px;
 }
 

@@ -34,4 +34,13 @@ class PasswordResetter
     end
   end
 
+  def update_password (user, params)
+    if user.reset_password( params )
+      UserNotifier.password_was_reset( user).deliver
+      return true
+    end
+  end
+
+  private
+
 end

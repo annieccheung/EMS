@@ -1,4 +1,4 @@
-require 'bcrypt'
+require 'bcrypt' 
 
 PASSWORD_RESET_EXPIRES = 4
 
@@ -15,6 +15,9 @@ class User
   field :fish, type: String
   field :code, type: String
   field :expires_at, type: Time
+  field :status, type: String
+  field :first_name, type: String
+  field :last_name, type: String
 
   before_save :set_random_password, :encrypt_password
   validates :email, presence: true, uniqueness: {case_sensitive: false}
@@ -48,7 +51,14 @@ class User
   end
 
   def reset_password(params)
-    self.update_attributes(params.merge( code: nil, expires_at: nil ))
+    if params[:password].blank?
+      self.errors.add(:password, "can't be blank")
+      false
+    else
+      if self.update_attributes(params)
+        self.update_attributes(params.merge( code: nil, expires_at: nil ))
+      end
+    end
   end
 
   protected

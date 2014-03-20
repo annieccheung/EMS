@@ -14,12 +14,13 @@ html
 
       header.navbar.navbar-fixed-top role="navigation"
         .container.nav-container
-          .pull-right.logout-link
-            = link_to "Log Out", logout_url, method: :delete, class: "btn btn-danger logout-link" if current_user
-          .container.inner-nav-container
+          .header-logo
+            .pull-right.logout-link
+              = link_to "Log Out", logout_url, method: :delete, class: "btn btn-danger logout-link" if current_user
             h1.top-header-brand Santa Clara University EMS
-            .nav-links
-              .header-link.0.col-md-4 try me
+          .container.inner-nav-container
+            ul.nav-links.list-unstyled.list-inline
+              .header-link.0.col-md-4 Squad
               .header-link.1.col-md-4 and me
               .header-link.2.col-md-4 and definitely me
 
@@ -27,7 +28,6 @@ html
         .row
         .col-md-4
            == yield
-           == render partial: "layouts/messages"
 
       footer#footer.footer
         .container
@@ -38,3 +38,5 @@ html
               = link_to " Terms of Use", terms_url
               |  &bull;
               |  © 2014 annie cheung
+
+      == flash_noty_script_tag
