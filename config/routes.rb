@@ -19,10 +19,10 @@ EMS::Application.routes.draw do
 
   get 'squad' => 'members#index'
 
-  get 'squad/:user_id' => 'members#select'
-  put 'squad/edit/:user_id' => 'members#update'
-  patch 'squad/edit/:user_id' => 'members#update'
-  delete 'squad/:user_id' => 'members#destroy'
+  # get 'squad/:user_id' => 'members#select'
+  # put 'squad/edit/:user_id' => 'members#update'
+  # patch 'squad/edit/:user_id' => 'members#update'
+  # delete 'squad/:user_id' => 'members#destroy'
 
 
  

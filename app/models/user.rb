@@ -6,7 +6,8 @@ class User
 
   include Mongoid::Document
   include Mongoid::Timestamps
-
+  include Mongoid::Paperclip
+  
   attr_accessor :password, :password_confirmation
 
 
@@ -19,9 +20,19 @@ class User
   field :first_name, type: String
   field :last_name, type: String
 
+  has_mongoid_attached_file :avatar
+
   before_save :set_random_password, :encrypt_password
   validates :email, presence: true, uniqueness: {case_sensitive: false}
   validates :password, confirmation: true
+
+  def self.register_user (params)
+    if params[:password].blank? or params[:first_name] or params[:last_name] or params[:email]
+      self.errors.add(:password, "fill in all of the fields.")
+    else
+      @user = User.create (params)
+    end
+  end
 
   def self.authenticate email, password
     user = User.find_by email: email

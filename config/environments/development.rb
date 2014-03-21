@@ -27,4 +27,15 @@ EMS::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => "wdi-paperclip",
+    :access_key_id => "AKIAIGS4WPDFSDSFWV3S4IPTMQ",
+    :secret_access_key => "hCz6YlZnYK8A5LhlXAyvok+xNuwzfZtTn4nEN2Z3",
+    :s3_host_name => 's3-us-west-1.amazonaws.com'
+  }
+  }
+  
 end
