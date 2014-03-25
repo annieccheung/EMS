@@ -7,7 +7,14 @@ header.navbar.navbar-fixed-top.view-members-navbar
 
 .members-list
   - @members.each do |member|
-	div
-    = member.first_name
-    =< member.last_name
+    div.face-wrapper.face
+      div.intro
+        a.member-img.circle-img
+      div.more-info
+        div.first-name = member.first_name
+        div.last-name =< member.last_name
+        div.status = member.status
+        div.email = member.email
+        
+
 

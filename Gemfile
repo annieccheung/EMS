@@ -9,8 +9,8 @@ gem 'slim'
 gem 'bson_ext'
 gem 'mongoid', github: "mongoid/mongoid"
 gem 'bcrypt'
-gem "mongoid-paperclip", :require => "mongoid_paperclip"
-gem 'aws-sdk', '~> 1.3.4'
+gem 'carrierwave', :require => 'carrierwave/mongoid'
+gem "rmagick"
 
 group :development, :test do
   # gem "better_errors"

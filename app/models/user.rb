@@ -9,6 +9,7 @@ class User
   include Mongoid::Paperclip
   
   attr_accessor :password, :password_confirmation
+  attr_accessor :avatar, :avatar_cache
 
 
   field :email, type: String
@@ -23,15 +24,19 @@ class User
   has_mongoid_attached_file :avatar
 
   before_save :set_random_password, :encrypt_password
+  before_save :capitalize_names
   validates :email, presence: true, uniqueness: {case_sensitive: false}
   validates :password, confirmation: true
 
+
   def self.register_user (params)
-    if params[:password].blank? or params[:first_name] or params[:last_name] or params[:email]
-      self.errors.add(:password, "fill in all of the fields.")
-    else
+    # if params[:password].blank? TODO: ADD VALIDATION FOR REGISTRATION
+    #   User.errors.add(:password, "fill in all of the fields.")
+    # else
       @user = User.create (params)
-    end
+      # @user.avatar = File.open('somewhere')
+      # @user.save!
+    # end
   end
 
   def self.authenticate email, password
@@ -72,6 +77,7 @@ class User
     end
   end
 
+
   protected
 
     def set_random_password
@@ -85,6 +91,12 @@ class User
       if password.present?
         self.salt = BCrypt::Engine.generate_salt
         self.fish = BCrypt::Engine.hash_secret(password, self.salt)
+      end
+    end
+
+    def capitalize_names
+      ['first_name', 'last_name'].each do |name|
+        self.attributes[name] = self.attributes[name].capitalize
       end
     end
 

@@ -48576,3 +48576,830 @@ NoMethodError (undefined method `errors' for User:Class):
   Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
   Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
   Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+Processing by MembersController#new as HTML
+  Rendered members/new.html.slim within layouts/application (11.9ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 4.0680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('532bfa0854656df36c080000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 8.3910ms
+Completed 200 OK in 135ms (Views: 131.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:40:12 +0800
+
+
+Started POST "/register" for 127.0.0.1 at 2014-03-25 08:40:26 +0800
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"first_name"=>"leo", "last_name"=>"teo", "email"=>"lteo@scu.edu", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `errors' for User:Class):
+  app/models/user.rb:31:in `register_user'
+  app/controllers/members_controller.rb:11:in `create'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.8ms)
+
+
+Started POST "/register" for 127.0.0.1 at 2014-03-25 08:45:14 +0800
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"first_name"=>"leo", "last_name"=>"teo", "email"=>"lteo@scu.edu", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"email"=>/\Alteo@scu\.edu$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 10.4380ms
+  MOPED: 127.0.0.1:27017 INSERT       database=ems_development collection=users documents=[{"_id"=>BSON::ObjectId('5330d19a54656df36c090000'), "first_name"=>"leo", "last_name"=>"teo", "email"=>"lteo@scu.edu", "salt"=>"$2a$10$WTyNT9IEhOpjWI5LCd/Lwu", "fish"=>"$2a$10$WTyNT9IEhOpjWI5LCd/LwuMPVqD/8SLny0v5HtFa6EYVBD4XLdKIC", "updated_at"=>2014-03-25 00:45:14 UTC, "created_at"=>2014-03-25 00:45:14 UTC}] flags=[]
+                         COMMAND      database=ems_development command={:getlasterror=>1, :w=>1} runtime: 10.3480ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 158ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 08:45:14 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d19a54656df36c090000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2300ms
+  Rendered site/index.html.slim within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 6.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:15 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d19a54656df36c090000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8940ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:17 +0800
+
+
+Started GET "/register" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+Processing by MembersController#new as HTML
+  Rendered members/new.html.slim within layouts/application (2.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d19a54656df36c090000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5940ms
+Completed 200 OK in 11ms (Views: 11.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:20 +0800
+
+
+Started POST "/register" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"first_name"=>"analee", "last_name"=>"walton", "email"=>"awalton@scu.edu", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"email"=>/\Aawalton@scu\.edu$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5420ms
+  MOPED: 127.0.0.1:27017 INSERT       database=ems_development collection=users documents=[{"_id"=>BSON::ObjectId('5330d1a854656df36c0a0000'), "first_name"=>"analee", "last_name"=>"walton", "email"=>"awalton@scu.edu", "salt"=>"$2a$10$JlB.6F0wUz2EkSh0OguXp.", "fish"=>"$2a$10$JlB.6F0wUz2EkSh0OguXp.YiGq4CRTPbekr4LQTavwdL.Ak9.Tdoy", "updated_at"=>2014-03-25 00:45:28 UTC, "created_at"=>2014-03-25 00:45:28 UTC}] flags=[]
+                         COMMAND      database=ems_development command={:getlasterror=>1, :w=>1} runtime: 2.5220ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 93ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d1a854656df36c0a0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4990ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7010ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:28 +0800
+
+
+Started GET "/register" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+Processing by MembersController#new as HTML
+  Rendered members/new.html.slim within layouts/application (3.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d1a854656df36c0a0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6850ms
+Completed 200 OK in 12ms (Views: 11.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:45:37 +0800
+
+
+Started POST "/register" for 127.0.0.1 at 2014-03-25 08:45:46 +0800
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"first_name"=>"kate", "last_name"=>"mcminimee", "email"=>"kmcminimee@scu.edu", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `errors' for User:Class):
+  app/models/user.rb:31:in `register_user'
+  app/controllers/members_controller.rb:11:in `create'
+
+
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/temp/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 08:54:56 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6630ms
+  Rendered members/index.html.slim within layouts/application (17.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d1a854656df36c0a0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5180ms
+Completed 200 OK in 131ms (Views: 66.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:54:57 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6370ms
+  Rendered members/index.html.slim within layouts/application (0.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d1a854656df36c0a0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5670ms
+Completed 200 OK in 24ms (Views: 21.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 08:56:24 +0800
+
+
+Started GET "/register" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+Processing by MembersController#new as HTML
+  Rendered members/new.html.slim within layouts/application (1.8ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d1a854656df36c0a0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4270ms
+Completed 200 OK in 31ms (Views: 30.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:44 +0800
+
+
+Started POST "/register" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8DuHHNvP3P0bBGbHcdisFD65XAeJLBvEBqudS59GnU=", "user"=>{"first_name"=>"mark", "last_name"=>"cheng", "email"=>"mcheng@scu.edu", "password"=>"[FILTERED]"}, "commit"=>"Register"}
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"email"=>/\Amcheng@scu\.edu$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6320ms
+  MOPED: 127.0.0.1:27017 INSERT       database=ems_development collection=users documents=[{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000'), "first_name"=>"Mark", "last_name"=>"Cheng", "email"=>"mcheng@scu.edu", "salt"=>"$2a$10$31stOV/Cp5Ij1YXM3Yvvdu", "fish"=>"$2a$10$31stOV/Cp5Ij1YXM3YvvduEcgQlHQQl3DNYsg8gqswnUCYTjDfDZC", "updated_at"=>2014-03-25 01:00:54 UTC, "created_at"=>2014-03-25 01:00:54 UTC}] flags=[]
+                         COMMAND      database=ems_development command={:getlasterror=>1, :w=>1} runtime: 0.9170ms
+Redirected to http://localhost:3000/
+Completed 302 Found in 100ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+Processing by SiteController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6130ms
+  Rendered site/index.html.slim within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:00:54 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1720ms
+  Rendered members/index.html.slim within layouts/application (1.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6040ms
+Completed 200 OK in 12ms (Views: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:03:58 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6450ms
+  Rendered members/index.html.slim within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7200ms
+Completed 200 OK in 15ms (Views: 12.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:39 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9860ms
+  Rendered members/index.html.slim within layouts/application (0.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5020ms
+Completed 200 OK in 8ms (Views: 5.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:04:48 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4640ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9800ms
+  Rendered members/index.html.slim within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4610ms
+Completed 200 OK in 17ms (Views: 13.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:26 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7820ms
+  Rendered members/index.html.slim within layouts/application (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5010ms
+Completed 200 OK in 22ms (Views: 20.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:05:35 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8330ms
+  Rendered members/index.html.slim within layouts/application (0.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4840ms
+Completed 200 OK in 18ms (Views: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:07:01 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4150ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7150ms
+  Rendered members/index.html.slim within layouts/application (0.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 3.4040ms
+Completed 200 OK in 29ms (Views: 27.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:08:37 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 3.6060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7970ms
+  Rendered members/index.html.slim within layouts/application (0.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5960ms
+Completed 200 OK in 25ms (Views: 19.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:10:30 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8790ms
+  Rendered members/index.html.slim within layouts/application (0.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5390ms
+Completed 200 OK in 25ms (Views: 21.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:25 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3190ms
+  Rendered members/index.html.slim within layouts/application (0.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5180ms
+Completed 200 OK in 21ms (Views: 18.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:11:39 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:14:26 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5970ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1220ms
+  Rendered members/index.html.slim within layouts/application (8.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4910ms
+Completed 200 OK in 18ms (Views: 14.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:14:27 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4400ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6960ms
+  Rendered members/index.html.slim within layouts/application (0.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4880ms
+Completed 200 OK in 39ms (Views: 7.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:24:19 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7160ms
+  Rendered members/index.html.slim within layouts/application (0.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6550ms
+Completed 200 OK in 25ms (Views: 22.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:06 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7480ms
+  Rendered members/index.html.slim within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4930ms
+Completed 200 OK in 21ms (Views: 19.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:19 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.5230ms
+  Rendered members/index.html.slim within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5460ms
+Completed 200 OK in 19ms (Views: 16.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:39 +0800
+
+
+Started GET "/squad" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+Processing by MembersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0800ms
+  Rendered members/index.html.slim within layouts/application (0.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('5330d54654656df36c0b0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5630ms
+Completed 200 OK in 19ms (Views: 16.7ms)
+
+
+Started GET "/assets/members.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+
+
+Started GET "/assets/vendor/noty/themes/default.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+
+
+Started GET "/assets/vendor/noty/packaged/jquery.noty.packaged.min.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-25 09:25:49 +0800

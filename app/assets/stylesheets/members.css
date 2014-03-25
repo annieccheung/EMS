@@ -10,5 +10,29 @@
 }
 
 .members-list {
-  margin-top: 3em;
+  margin-top: 1.5em;
+}
+
+.face-wrapper.face {
+	float: left;
+  position: relative;
+  z-index: 1;
+  border: 7px solid #e8e6e6;
+  margin: 2em 2em;
+  height: 160px;
+  width: 160px;
+}
+
+.img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+.first-name {
+
+}
+
+.email {
+  font-size: 12px;
 }
