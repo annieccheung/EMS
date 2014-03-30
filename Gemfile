@@ -9,7 +9,7 @@ gem 'slim'
 gem 'bson_ext'
 gem 'mongoid', github: "mongoid/mongoid"
 gem 'bcrypt'
-gem 'carrierwave', :require => 'carrierwave/mongoid'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem "rmagick"
 
 group :development, :test do
@@ -17,4 +17,16 @@ group :development, :test do
   gem "binding_of_caller"
   gem "letter_opener"
   gem 'pry'
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
 end

@@ -1,15 +1,17 @@
 require 'bcrypt' 
-
+ 
 PASSWORD_RESET_EXPIRES = 4
 
 class User
 
   include Mongoid::Document
   include Mongoid::Timestamps
-  include Mongoid::Paperclip
+
+  extend CarrierWave::Mount
   
-  attr_accessor :password, :password_confirmation
-  attr_accessor :avatar, :avatar_cache
+  attr_accessor :password, :password_confirmation, :image, :image_cache
+
+  mount_uploader :image, ImageUploader
 
 
   field :email, type: String
@@ -20,8 +22,8 @@ class User
   field :status, type: String
   field :first_name, type: String
   field :last_name, type: String
+  field :image, type: String
 
-  has_mongoid_attached_file :avatar
 
   before_save :set_random_password, :encrypt_password
   before_save :capitalize_names
@@ -33,9 +35,9 @@ class User
     # if params[:password].blank? TODO: ADD VALIDATION FOR REGISTRATION
     #   User.errors.add(:password, "fill in all of the fields.")
     # else
-      @user = User.create (params)
-      # @user.avatar = File.open('somewhere')
-      # @user.save!
+      user = User.create (params)
+      user.store_image!
+      user if user
     # end
   end
 
@@ -47,6 +49,12 @@ class User
   def self.find_by_code code
     if user = User.find_by({:code => code, :expires_at => {"$gte" => Time.now.gmtime}})
       user.set_expiration
+    end
+    user
+  end
+
+  def self.find_by_id id
+    if user = User.find_by({:id => id})
     end
     user
   end
@@ -76,7 +84,6 @@ class User
       end
     end
   end
-
 
   protected
 

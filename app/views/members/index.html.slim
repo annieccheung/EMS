@@ -1,4 +1,4 @@
-header.navbar.navbar-fixed-top.view-members-navbar
+header.navbar-fixed-top.view-members-navbar
   .container.navbar-container.view-members-container
     ul.view-members-options.list-unstyled.list-inline
       li.squad-link.1.col-md-4 all
@@ -7,14 +7,15 @@ header.navbar.navbar-fixed-top.view-members-navbar
 
 .members-list
   - @members.each do |member|
-    div.face-wrapper.face
-      div.intro
-        a.member-img.circle-img
-      div.more-info
-        div.first-name = member.first_name
-        div.last-name =< member.last_name
-        div.status = member.status
-        div.email = member.email
+    .face-wrapper.face.col-md-4
+      .intro
+        .picture.img-circle = image_tag :image.to_s 
+      .more-info
+        .name = "#{member.first_name} #{member.last_name}"
+        / .last-name = member.last_name
+        .status = member.status
+        .show-link = link_to "View More", squad_:user'(:user_id => member.id )
+
         
 
 

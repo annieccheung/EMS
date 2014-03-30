@@ -2,9 +2,6 @@ EMS::Application.routes.draw do
 
   root 'site#index'
 
-  get 'register' => 'members#new'
-  post 'register' => 'members#create'
-
   get 'login' => 'session#new'
   post 'login'=> 'session#create'
   delete 'logout' => 'session#destroy'
@@ -19,11 +16,24 @@ EMS::Application.routes.draw do
 
   get 'squad' => 'members#index'
 
-  # get 'squad/:user_id' => 'members#select'
+  get 'register' => 'members#new'
+  post 'register' => 'members#create'
+
+  get 'squad/:user_id' => 'members#show'
+
+  get 'records' => 'pcr#index'
+
+  get 'pcr' => 'pcr#new'
+  post 'pcr' => 'pcr#create'
+
+
   # put 'squad/edit/:user_id' => 'members#update'
   # patch 'squad/edit/:user_id' => 'members#update'
   # delete 'squad/:user_id' => 'members#destroy'
 
 
+  # resources :user do
+  #   get :avatar, on: :member
+  # end
  
 end

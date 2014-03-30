@@ -5,18 +5,22 @@
 
 html, 
 body {
-  font-family: 'Gafata', sans-serif;
+  background: url(/assets/images/seamlesstexture19_1200.jpg)
+  font-family: 'Muli', sans-serif;
+  margin: auto;
 }
 
 h1{
-  font-family: 'Gafata', sans-serif;  
+  font-family: 'Muli', sans-serif; 
+
 }
 
 .navbar.navbar-fixed-top{
   background: white;
   text-align: center;
   position: fixed;
-  z-index: 100; 
+  z-index: 100;
+  margin: 0 auto; 
 }
 
 .nav-container {
@@ -27,39 +31,44 @@ h1{
 }
 
 .header-logo {
-  margin-left: 5em;
+  margin: 0 auto;
+  text-align: center;
+  height: 4em;
+
 }
 
 .inner-nav-container {
-  font-size: 14px;
+  font-size: 1.2em;
+  text-align: center;
   border-bottom: 1px solid hsla(0, 0%, 73%, 1);
   padding-bottom: 10px;
   line-height:35px;
   z-index: 100;
+  margin: 0 auto;
+  color: hsl(0, 0%, 36%);
+  font-family: 'Muli', sans-serif;
 }
 
 .top-header-brand {
   color: hsla(348, 92%, 43%, 1);
   font-size: 35px;
-  margin-bottom: auto;
+  margin: .5em auto;
   position: relative;
-  margin-right: 0em;
   width: 600px;
-  text-align: left;
 }
-
 
 .header-link{
   float: left;
   margin-top: 1px;
   text-align: center;
+  font-weight: bold;
 }
 
 .logout-link {
   float: left;
   margin-right: 15px;
+  font-family: 'Muli', sans-serif; 
 }
-
 
 .form-group{
   margin-right: 5px;
@@ -75,7 +84,8 @@ h1{
 
 #main
 {
-margin: 10em 10em auto ;
+margin: 10em auto auto 15em;
+width: 1000px;
 }
 
 

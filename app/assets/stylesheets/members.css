@@ -2,15 +2,19 @@
 	margin-top: 7.5em;
 	padding-top: 1.25em;
 	margin-bottom: 1em;
+  background: white;
 }
 
 .view-members-options {
-  width: 500px;
   text-align: center;
+  position: relative;
 }
 
 .members-list {
   margin-top: 1.5em;
+  width: 1200px;
+/*  margin-left: 5em;*/
+
 }
 
 .face-wrapper.face {
@@ -26,13 +30,23 @@
 .img-circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
-  border-radius: 500px;
+  margin: 2em 2em;
+  height: 10px;
+  width: 10px;
+}
 }
 
-.first-name {
-
+.more-info {
+  margin-top: 2em;
+  text-align: center;
 }
 
-.email {
-  font-size: 12px;
+/*.first-name {
+float: left;
 }
+
+.last-name {
+float: left;
+margin-left: .2em;
+}
+*/

@@ -1,0 +1,22 @@
+fieldset {
+  margin-top: 1.8em;
+  margin-left: 10em;
+  margin-right: 30em;
+  font-family: 'Muli', sans-serif;
+}
+
+
+.textinput {
+	width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+}
+
+.sr-only {
+
+  width: 1000px;
+  height: 25px;
+  text-align: left;
+  font-size: 1em;
+}

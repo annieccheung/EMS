@@ -1,0 +1,23 @@
+fieldset {
+  margin-top: 1.8em;
+  margin-left: 10em;
+  margin-right: 30em;
+  font-family: 'Muli', sans-serif;
+}
+
+.legend {
+  color: hsl(0, 0%, 36%);
+  border-bottom: none;
+  float: left;
+  width: 14em;
+}
+
+.uploadpathdiv {
+  margin-bottom: 1.5em;
+}
+
+.sign-up-link {
+	float: left;
+  margin-right: 0px;
+  font-family: 'Muli', sans-serif; 
+}

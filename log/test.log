@@ -1,0 +1,52 @@
+Overwriting existing field image in class User.
+Overwriting existing field image in class User.
+Overwriting existing field image in class User.
+Overwriting existing field image in class User.
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 18.2330ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 14.8530ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.8720ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3620ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5870ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3960ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3650ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3510ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.2790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5650ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5220ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4900ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.9150ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5290ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7890ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4630ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3210ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5880ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3320ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4370ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3370ms
+Overwriting existing field image in class User.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.8550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.3580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>nil} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5030ms
+  MOPED: 127.0.0.1:27017 QUERY        database=ems_test collection=users selector={"email"=>/\Aannieccheung@gmail\.com$/i} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4300ms
