@@ -1,0 +1,93 @@
+= form_for @pcr, html: { class: 'form-horizontal', :multipart => true } do |f|
+  
+  fieldset.container
+    .row
+      legend.pcr-legend Fill out incident information below:
+    
+    .row
+
+      .form-group.col-md-6
+        = f.label :case_number, 'Case Number'
+        = f.text_field :case_number, class: "form-control"
+      
+    .row
+
+
+      .form-group.col-md-8
+        = f.label :incident_date, 'Incident Date/Time'
+        / = f.text_field :incident_date, class: "form-control", id: "datetimepicker"
+        = f.datetime_local_field :incident_date, class: "form-control"
+
+      .form-group.col-md-8
+        = f.label :on_scene, 'On Scene'
+        = f.datetime_local_field :on_scene, class: "form-control"
+
+      .form-group.col-md-8
+        = f.label :transition, 'Transition'
+        = f.datetime_local_field :transition, class: "form-control"
+
+      .form-group.col-md-8
+        = f.label :depart_scene, 'Depart Scene'
+        = f.datetime_local_field :depart_scene, class: "form-control"
+
+      .form-group.col-md-10
+        = f.label :dispatched, 'Dispatched'
+        = f.datetime_local_field :dispatched, class: "form-control"
+
+
+      .form-group.col-md-4
+        = f.label :pt_last_name, 'Last Name'
+        = f.text_field :pt_last_name, class: "form-control"
+
+      .form-group.col-md-4
+        = f.label :pt_first_name, 'First Name'
+        = f.text_field :pt_first_name, class: "form-control"
+
+      .form-group.col-md-2
+        = f.label :pt_middle_name, 'Middle Name'
+        = f.text_field :pt_middle_name, class: "form-control"
+
+      .form-group.col-md-8
+        = f.label :pt_birthdate, 'Birthdate'
+        = f.datetime_local_field :pt_birthdate, class: "form-control"
+      
+      .form-group.col-md-6
+        = f.label :pt_age, 'Age'
+        = f.text_field :pt_age, :class => "form-control"
+
+      .form-group.col-md-6 
+        = f.label :pt_student_id, 'Student ID'
+        = f.text_field :pt_student_id, class: "form-control"
+
+      .form-group.col-md-8 
+        = f.label :pt_sex, 'Sex'
+        = f.select :pt_sex, [['Female'], ['Male'], ['Other']], {}, class: "form-control"
+
+      .form-group.col-md-6 
+        = f.label :pt_telephone, 'Telephone'
+        = f.text_field :pt_telephone, class: "form-control"
+
+      .form-group.col-md-6 
+        = f.label :pt_address, 'Address'
+        = f.text_field :pt_address, class: "form-control"
+
+      .form-group.col-md-6 
+        = f.label :pt_city, 'City'
+        = f.text_field :pt_city, class: "form-control"
+
+      .form-group.col-md-6 
+        = f.label :pt_state, 'State'
+        = f.text_field :pt_state, class: "form-control"
+
+      .form-group.col-md-6 
+        = f.label :pt_zip, 'Zip Code'
+        = f.text_field :pt_zip, class: "form-control"
+
+    .row.col-md-6 
+
+      .form-group
+        = f.label :history_present_illness, 'History of Present Illness'
+        = f.text_area :history_present_illness, placeholder: "Please give a description of the patient, incident, and care given.", class: "textinput"
+
+      .form-group
+        =f.submit "Save", class: "btn btn-success btn-lg"

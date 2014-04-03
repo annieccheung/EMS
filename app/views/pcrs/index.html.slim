@@ -1,0 +1,11 @@
+.create-new = link_to "New PCR", new_pcr_url, method: :get, class: "btn btn-default create-pcr-link"
+
+.pcr-list
+  - @pcrs.each do |pcr|
+      .pcr-info
+      	.case-number = " Incident Number: #{pcr.case_number}"
+        .name = "Patient Name: #{pcr.pt_last_name}, #{pcr.pt_first_name}"
+        .emt = "EMT 1 (Vet): #{pcr.emt_1_last_name}"
+        .emt = "EMT 2 (Rookie): #{pcr.emt_2_last_name}"
+        .emt = "EMT 3 (Rookie): #{pcr.emt_3_last_name}"
+        .edit = link_to "Edit", edit_pcr_url(pcr.id), class: "btn btn-default edit-link" 

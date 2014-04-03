@@ -10,6 +10,10 @@ body {
   margin: auto;
 }
 
+.main {
+  font-family: 'Muli', sans-serif;
+}
+
 h1{
   font-family: 'Muli', sans-serif; 
 

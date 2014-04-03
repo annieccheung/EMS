@@ -1,22 +1,47 @@
-fieldset {
+/*fieldset {
   margin-top: 1.8em;
   margin-left: 10em;
   margin-right: 30em;
   font-family: 'Muli', sans-serif;
+  width: 700px;
+}*/
+
+.legend {
+  float: none;
+  width: 600px;
 }
 
-
 .textinput {
-	width: 600px;
-  height: 120px;
-  border: 3px solid #cccccc;
+	width: 800px;
+  height: 400px;
+  border: 2px solid #cccccc;
   padding: 5px;
 }
 
 .sr-only {
-
   width: 1000px;
   height: 25px;
   text-align: left;
   font-size: 1em;
+}
+
+
+.form-group {
+/*  width: 400px;*/
+  margin: auto 10px 5px 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.pcr-info {
+  margin-top: 10px;
+  border: 2px solid #cccccc;
+  font-family: 'Muli', sans-serif;
+}
+
+.case-number {
+  font-size: 1.25em;
+  font-weight: bold;
 }

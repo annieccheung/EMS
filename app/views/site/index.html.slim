@@ -1,1 +1,4 @@
-= "Welcome, #{@current_user.email}"
+.container
+  .row.welcome
+    img.img-rounded src= "http://msfhq.com/wp-content/uploads/2013/02/University-of-Santa-Clara-Logo.jpg"
+     = "Welcome, #{@current_user.first_name} #{@current_user.last_name}!"

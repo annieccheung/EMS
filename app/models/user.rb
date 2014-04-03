@@ -29,15 +29,17 @@ class User
   before_save :capitalize_names
   validates :email, presence: true, uniqueness: {case_sensitive: false}
   validates :password, confirmation: true
+  validates :status, presence: true
+  validates_inclusion_of :status, :in => ["vet", "rookie"]
 
 
   def self.register_user (params)
-    # if params[:password].blank? TODO: ADD VALIDATION FOR REGISTRATION
+    # if params[:password].blank? 
     #   User.errors.add(:password, "fill in all of the fields.")
     # else
-      user = User.create (params)
-      user.store_image!
-      user if user
+    user = User.create(params)
+    user.store_image!
+    user if user
     # end
   end
 
@@ -83,6 +85,22 @@ class User
         self.update_attributes(params.merge( code: nil, expires_at: nil ))
       end
     end
+  end
+
+  def self.options_for_emt_vet
+    @options = []
+    @users = User.where(:status => 'vet')
+    @options = @users.map { |user| [user.last_name] }
+
+    @options
+  end
+
+  def self.options_for_emt_rookie
+    @options = []
+    @users = User.where(:status => 'rookie')
+    @options = @users.map { |user| [user.last_name] }
+
+    @options
   end
 
   protected

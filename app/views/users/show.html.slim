@@ -1,0 +1,12 @@
+.info
+	h1.member_name
+	  = " #{@user.first_name} #{@user.last_name}"
+
+	.status
+    = "#{@user.status}"
+
+	.email
+    = "#{@user.email}"
+	
+	.modify-user
+    = link_to "Edit", edit_user_url, class: "btn btn-default edit-link"

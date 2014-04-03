@@ -1,8 +1,11 @@
+/* INDEX FORMATTING */
+
 .view-members-navbar {
 	margin-top: 7.5em;
 	padding-top: 1.25em;
 	margin-bottom: 1em;
   background: white;
+  font-family: 'Muli', sans-serif;
 }
 
 .view-members-options {
@@ -10,11 +13,13 @@
   position: relative;
 }
 
-.members-list {
-  margin-top: 1.5em;
-  width: 1200px;
-/*  margin-left: 5em;*/
+.container {
+  width: 970px;
+}
 
+.row {
+  position: relative;
+  margin-left: 2em;
 }
 
 .face-wrapper.face {
@@ -25,15 +30,14 @@
   margin: 2em 2em;
   height: 160px;
   width: 160px;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
 }
 
-.img-circle {
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  margin: 2em 2em;
-  height: 10px;
-  width: 10px;
-}
+.picture {
+  position: relative;
+  height: 160px;
+  width: 160px;
 }
 
 .more-info {
@@ -41,7 +45,7 @@
   text-align: center;
 }
 
-/*.first-name {
+.first-name {
 float: left;
 }
 
@@ -49,4 +53,13 @@ float: left;
 float: left;
 margin-left: .2em;
 }
-*/
+
+.welcome {
+  font-family: 'Muli', sans-serif;
+  font-size: 2em;
+}
+
+.modify-user{
+  margin-top: 2em;
+}
+

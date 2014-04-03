@@ -1,5 +1,8 @@
 EMS::Application.routes.draw do
 
+  resources :users
+  resources :pcrs
+
   root 'site#index'
 
   get 'login' => 'session#new'
@@ -14,17 +17,17 @@ EMS::Application.routes.draw do
   put 'reset/:code' => 'password#update'
   patch 'reset/:code' => 'password#update'
 
-  get 'squad' => 'members#index'
+  # get 'squad' => 'members#index'
 
-  get 'register' => 'members#new'
-  post 'register' => 'members#create'
+  # get 'register' => 'members#new'
+  # post 'register' => 'members#create'
 
-  get 'squad/:user_id' => 'members#show'
+  # get 'members/:user_id' => 'members#show', as: :member
 
-  get 'records' => 'pcr#index'
+  # get 'pcr' => 'pcr#index'
 
-  get 'pcr' => 'pcr#new'
-  post 'pcr' => 'pcr#create'
+  # get 'pcr' => 'pcr#new'
+  # post 'pcr' => 'pcr#create'
 
 
   # put 'squad/edit/:user_id' => 'members#update'

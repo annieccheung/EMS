@@ -1,4 +1,5 @@
-= form_for :user, url: register_url, :html => { :multipart => true} do |f|
+= form_for @user, :html => { :multipart => true} do |f|
+  
   fieldset
 
     legend.legend Join the squad! 
@@ -20,12 +21,12 @@
       = f.password_field :password, class: "form-control", placeholder: "password"
 
     .form-group
-      = f.label :status, class: "sr-only"
-      = f.text_field :status, class: "form-control", placeholder: "rookie or vet"
+      = f.label :status, "Status"
+      = f.select :status, [["Vet"], ["Rookie"]], class: "form-control"
 
 
-    .uploadpathdiv
-      = f.label :image, class: "sr-only"
+    .form-group.uploadpathdiv
+      = f.label :image, "Upload a profile picture:"
       = f.file_field :image
     /   input.uploadpath name="path" type="text" /
     /   img src="/themes/scaccarium/images/button-upload.png" /

@@ -20,8 +20,8 @@ html
             h1.top-header-brand Santa Clara University EMS
           .container.inner-nav-container
             ul.nav-links.list-unstyled.list-inline
-              .header-link.0.col-md-6 = link_to "Squad", squad_url, method: :get 
-              .header-link.2.col-md-6  = link_to "PCR", records_url, method: :get
+              .header-link.0.col-md-6 = link_to "Squad", users_url, method: :get 
+              .header-link.2.col-md-6  = link_to "PCR", pcrs_url, method: :get
 
       main#main.container role="main"
         == yield
@@ -37,3 +37,4 @@ html
               |  © 2014 annie cheung
 
       == flash_noty_script_tag
+

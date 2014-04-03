@@ -1,0 +1,24 @@
+= form_for @user, :html => { :multipart => true} do |f|
+  
+  fieldset
+
+    legend.legend Join the squad! 
+
+    .form-group
+      = f.label :first_name, class: "sr-only"
+      = f.text_field :first_name, class: "form-control", placeholder: "first name"
+
+    .form-group
+      = f.label :last_name, class: "sr-only"
+      = f.text_field :last_name, class: "form-control", placeholder: "last name"
+
+    .form-group
+      = f.label :email, class: "sr-only"
+      = f.text_field :email, class: "form-control", placeholder: "email address"
+
+    .form-group
+      = f.label :status, class: "sr-only"
+      = f.select :status, [["Vet"], ["Rookie"]], class: "form-control"
+
+    .form-group
+      =f.submit "Save", class: "btn btn-success btn-lg"

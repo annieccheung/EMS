@@ -1,0 +1,20 @@
+sidebar.navbar-fixed-top.view-members-navbar
+  .container.navbar-container.view-members-container
+    ul.view-members-options.list-unstyled.list-inline
+      li.squad-link.1.col-md-4 = link_to "All", users_path
+      li.squad-link.2.col-md-4 = link_to "Vets", users_path(:status => "vet" )
+      li.squad-link.3.col-md-4 = link_to "Rookies", users_path(:status => "rookie" )
+
+
+.members-list.container
+  .row
+    - @users.each do |member|
+      .face-wrapper.face.col-md-4
+        .picture.img-responsive = image_tag member.image_url.to_s 
+        .more-info
+          .name = link_to "#{member.first_name} #{member.last_name}", user_path(member)
+          .status = member.status
+          
+        
+
+

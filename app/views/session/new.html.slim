@@ -1,9 +1,10 @@
 = form_for :user, url: login_url, html: { id: "login-form", :multipart => true } do |f|
+  
   fieldset
 
     legend.legend Sign in
     .sign-up-link 
-        = link_to "Sign up!", register_url, method: :get, class: "btn btn-default register-link"
+        = link_to "Sign up!", new_user_url, method: :get, class: "btn btn-default register-link"
         
     .form-group
       = f.label :email, class: "sr-only"
